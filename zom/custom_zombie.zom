@@ -1,0 +1,25 @@
+test_human,1 ; my custom zombie!
+je,16
+test_human,2
+je,12
+test_random
+je,9
+rotate,0
+forward
+test_human,2
+je,12
+forward
+test_passable
+je,15
+rotate,0
+forward
+attack
+test_passable
+je,20
+rotate,0
+forward
+rotate,1
+test_human,1
+je,25
+goto,5
+attack
